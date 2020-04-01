@@ -37,9 +37,51 @@ footer {
 }
 
 counter {
+  display: block;
   background-color: #000000;
 }
 
 counter .number {
   color: #ffffff;
+}
+
+carousel {
+  display: block;
+  max-width: 700px;
+}
+
+carousel .page-number {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+carousel .arrow-left {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+carousel .arrow-right {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+carousel .footer {
+  display: block;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+carousel img {
+  box-sizing: border-box;
+  width: 100%;
 }
