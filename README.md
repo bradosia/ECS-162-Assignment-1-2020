@@ -10,8 +10,6 @@ A Web server, in Node and Express, that servers a single static Web page
 
 Glitch Repository: https://glitch.com/~ucd-ecs-162-assignment-1-2020
 
-https://ucd-ecs-162-assignment-1-2020.glitch.me/
-
 # Materials
 
 https://drive.google.com/drive/folders/1HAct1YXtUh3WdeKNbcO9SK_jOcrbONA7
