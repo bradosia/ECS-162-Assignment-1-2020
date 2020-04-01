@@ -23,3 +23,23 @@ footer {
   padding-top: 1.5em;
   border-top: 1px solid lightgrey;
 }
+
+a {
+  color: #000000;
+}
+
+b {
+  color: #c9523d;
+}
+
+footer {
+  background-color: #c6d2da;
+}
+
+counter {
+  background-color: #000000;
+}
+
+counter .number {
+  color: #ffffff;
+}
