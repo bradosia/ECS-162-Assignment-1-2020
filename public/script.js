@@ -1,6 +1,7 @@
-// client-side js, loaded by index.html
-// run by the browser each time the page is loaded
-// for now, just prints a message to the browser console
+document.getElementById("counter").addEventListener("click", ()=>{
+	document.getElementById("counter").textContent = parseInt(document.getElementById("counter").textContent) + 1;
+})
 
-console.log("hello world :o");
-
+setInterval(function(){
+document.getElementById("counter").textContent = parseInt(document.getElementById("counter").textContent) + 1;
+},1000);

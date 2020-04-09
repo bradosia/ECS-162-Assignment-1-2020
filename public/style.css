@@ -16,16 +16,18 @@ body {
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
-  max-width: calc(100% - 5rem);
+  font-size: 1.5em;
   line-height: 1.1;
 }
 
 main {
+  width: 50%;
+  margin-left: 25%;
+  display: flex;
+  flex-direction: column;
+
   font-family: sans-serif;
   line-height: 1.5em;
-  width: 100%;
 }
 
 main p {
@@ -36,7 +38,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: row;
-  
+
   margin-top: 3em;
   padding: 1.5em;
   border-top: 1px solid lightgrey;
@@ -78,20 +80,22 @@ counter {
 
 counter .number {
   color: #ffffff;
-}
-
-main {
-  width: 50%;
-  max-width: 700px;
-  margin-left: 25%;
-  margin-right: 25%;
-  display: flex;
-  flex-direction: column;
+  font-size: 2.7em;
+  user-select: none;
 }
 
 carousel-title {
+  display: flex;
+  flex-direction: column;
 width: 100%;
+padding: 0.75em;
 }
+
+carousel-title div {
+padding: 0.75em;
+text-align: center;
+}
+
 
 carousel {
   display: block;
