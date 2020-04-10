@@ -1,40 +1,42 @@
 <!-- This is the awful HTML comment syntax -->
-<!DOCTYPE html>  <!-- Message to browser...I think I am HTML -->
-<html lang="en"> <!-- My text is in English -->
+<!DOCTYPE html> <!-- Message to browser...I think I am HTML -->
+<html lang="en">
+<!-- My text is in English -->
 
-  <head>
-    <meta charset="utf-8"> <!-- Binary encoding of characters -->
-    <title>Static server</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- This will come in handy later -->
+<head>
+  <meta charset="utf-8"> <!-- Binary encoding of characters -->
+  <title>Static server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This will come in handy later -->
 
-    <!-- import the webpage's css -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+  <!-- import the webpage's css -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat: 200, 300, 400, 600, 700" rel="stylesheet">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat: 200, 300, 400, 600, 700" rel="stylesheet">
 
 
-  </head>
-  <body>
-    <announcement>
-      jan shrem and maria <b>manetti shrem museum</b> of art
-    </announcement>
-    <nav>
-      <div class="main">
-        <a href="#">home</a>
-        <a href="#">visit</a>
-        <a href="#">about</a>
-      </div>
-    </nav>
+</head>
 
-    <counter>
-      <div class="number" id="counter">
-        3,623,037
-      </div>
-    </counter>
+<body>
+  <announcement>
+    jan shrem and maria <b>manetti shrem museum</b> of art
+  </announcement>
+  <nav>
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">visit</a></li>
+      <li><a href="#">about</a></li>
+    </ul>
+  </nav>
 
-    <main>
+  <counter>
+    <div class="number" id="counter">
+      3,623,037
+    </div>
+  </counter>
+
+  <main>
     <carousel-title>
       <div>
         <h1>Stephen Kaltenbach: The Beginning and The End</h1>
@@ -49,22 +51,21 @@
         1 / 4
       </div>
       <a class="arrow-left">
-        <
-      </a>
-      <a class="arrow-right">
-        >
-      </a>
-      <div class="footer">
-        Stephen Kaltenbach and guests, MODERN DRAPERY, 2020. Felt Fabric, 45 x 60 inches.
-      </div>
-      <img src="static/fabric.jpg"></img>
+        < </a>
+          <a class="arrow-right">
+            >
+          </a>
+          <img src="static/fabric.jpg"></img>
+          <div class="footer">
+            Stephen Kaltenbach and guests, MODERN DRAPERY, 2020. Felt Fabric, 45 x 60 inches.
+          </div>
     </carousel>
 
     <carousel-nav>
       <button class="active"></button><button></button><button></button><button></button>
     </carousel-nav>
 
-          <p>During the late 1960s, after graduating from UC Davis (BA, 1966; MA, 1967) and moving to New York, Stephen Kaltenbach established a reputation in the emerging international field of Conceptual art. But in 1970, just as he was achieving career
+    <p>During the late 1960s, after graduating from UC Davis (BA, 1966; MA, 1967) and moving to New York, Stephen Kaltenbach established a reputation in the emerging international field of Conceptual art. But in 1970, just as he was achieving career
       success, Kaltenbach abruptly withdrew to California’s Central Valley, appearing to abandon Conceptual work in favor of the more traditional mediums of painting and sculpture. Coinciding with the 50th anniversary of his “dropout,” this
       exhibition considers Kaltenbach’s engagement with time as a principal theme across his remarkably diverse career, which encompasses bronze time capsules, advertisements placed anonymously in Artforum magazine in 1968-69, and the monumental
       photorealist painting Portrait of My Father (1972-79)</p>
@@ -89,17 +90,9 @@
       <h3>The Manetti Shrem Museum will be temporarily closed starting March 16, 2020</h3>
       <p>This is to prioritize the health and safety of our students, faculty, and the community at large. Thank you for your patience.</p>
     </div>
-</footer>
+  </footer>
+</body>
 
-<credit class="credit">
-    Made with <a href="https://glitch.com">Glitch</a>!
-  </credit>
-
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:2em;right:20px;"></div>
-  </body>
-
-  <!-- import the webpage's browser-side javascript file -->
-  <!-- Does not do anything yet -->
-  <script src="script.js"></script>
+<!-- import the webpage's browser-side javascript file -->
+<!-- Does not do anything yet -->
+<script src="script.js"></script>
