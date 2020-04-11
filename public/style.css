@@ -149,18 +149,36 @@ carousel {
   background-color: #000000;
 }
 
+carousel .page-number {
+  padding-top: 0.5em;
+  padding-left: 0.9em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+carousel .arrow-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 4em;
+}
+
 carousel .arrow {
   display: flex;
   justify-content: center;
   align-items: center;
-
   color: #ffffff;
-  width: 10%;
+  width: 100%;
   user-select: none;
   text-decoration: none;
   transition: all 1s ease-in;
-  font-size: 4em;
+  font-size: 3em;
   border-radius: 0.1em;
+  z-index: 2;
 }
 
 carousel .arrow:hover {
@@ -169,39 +187,42 @@ carousel .arrow:hover {
   text-decoration: none;
 }
 
-carousel .page-number {
-  padding-top: 0.45em;
-  padding-left: 0.6em;
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+carousel .arrow-box-left {
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+carousel .arrow-box-right {
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
 carousel .arrow-left {
-  position: absolute;
-  height: 10em;
-  top: auto;
-  left: 0;
-  bottom: auto;
+  height: 1.6em;
 }
 
 carousel .arrow-right {
-  position: absolute;
-  height: 10em;
-  top: auto;
-  right: 0;
-  bottom: auto;
+  height: 1.6em;
 }
 
 carousel .slide {
-  display: none;
-  transition: all 1s ease-out;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 1s linear;
 }
 
 carousel .active {
   display: block;
-  transition: all 1s ease-in;
+  position: relative;
+  opacity: 1;
+  transition: all 1s linear;
 }
 
 carousel .footer {

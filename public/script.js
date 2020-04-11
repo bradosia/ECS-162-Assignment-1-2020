@@ -69,15 +69,15 @@ class Carousel {
     for (let i = 0; i < n; i++) {
       this.NavButtonList[i].className = "";
       if (i == this.slideNumCurrent) {
-        this.NavButtonList[i].className = "active";
+        this.NavButtonList[i].classList.add("active");
       }
     }
     // set active slide
     n = this.slideEleList.length;
     for (let i = 0; i < n; i++) {
-      this.slideEleList[i].className = "slide";
+      this.slideEleList[i].classList.remove("active");
       if (i == this.slideNumCurrent) {
-        this.slideEleList[i].className = "slide active";
+        this.slideEleList[i].classList.add("active");
       }
     }
     // set page number display
