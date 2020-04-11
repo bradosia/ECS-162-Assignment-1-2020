@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: Montserrat, Helvetical, sans-serif;
+  font-family: "Montserrat", Helvetical, sans-serif;
   font-weight: 200;
   font-style: normal;
   display: flex;
@@ -37,6 +37,7 @@ main {
 
 main p {
   padding: 0.5em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 footer {
@@ -148,8 +149,24 @@ carousel {
   background-color: #000000;
 }
 
-carousel a {
+carousel .arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   color: #ffffff;
+  width: 10%;
+  user-select: none;
+  text-decoration: none;
+  transition: all 1s ease-in;
+  font-size: 4em;
+  border-radius: 0.1em;
+}
+
+carousel .arrow:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 1s ease-in;
+  text-decoration: none;
 }
 
 carousel .page-number {
@@ -162,25 +179,29 @@ carousel .page-number {
 }
 
 carousel .arrow-left {
-  display: block;
   position: absolute;
-  top: 0;
+  height: 10em;
+  top: auto;
   left: 0;
-  bottom: 0;
-  width: 10%;
-  vertical-align: middle;
-  text-align: center;
+  bottom: auto;
 }
 
 carousel .arrow-right {
-  display: block;
   position: absolute;
-  top: 0;
+  height: 10em;
+  top: auto;
   right: 0;
-  bottom: 0;
-  width: 10%;
-  vertical-align: middle;
-  text-align: center;
+  bottom: auto;
+}
+
+carousel .slide {
+  display: none;
+  transition: all 1s ease-out;
+}
+
+carousel .active {
+  display: block;
+  transition: all 1s ease-in;
 }
 
 carousel .footer {
@@ -212,6 +233,11 @@ carousel-nav button {
   height: 1em;
   border-radius: 5em;
   background-color: #bbbbbb;
+  border: 0;
+}
+
+carousel-nav .active {
+  background-color: #717171;
   border: 0;
 }
 
